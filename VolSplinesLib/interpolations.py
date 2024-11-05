@@ -57,7 +57,7 @@ class Interpolations:
     @staticmethod
     def slv_model(k, params):
         """
-        Spline Log Volatility (SLV) model function.
+        Stochastic Local Volatility (SLV) model function.
 
         Mathematical Form:
             IV(k) = a + b * k + c * k^2 + d * k^3 + e * k^4

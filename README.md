@@ -54,7 +54,7 @@ plt.show()
 ## Available Models
 
 1. **RFV (Rational Function Volatility)**
-2. **SLV (Spline Log Volatility)**
+2. **SLV (Stochastic Local Volatility)**
 3. **SABR (Stochastic Alpha Beta Rho)**
 4. **SVI (Stochastic Volatility Inspired)**
 
