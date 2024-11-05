@@ -2,6 +2,8 @@
 
 **VolSplinesLib** is a Python library for interpolating implied volatility surfaces using various volatility models. The library provides tools for fitting and interpolating models to market data, supporting popular methods like RFV, SLV, SABR, and SVI.
 
+You can find the library on [PyPI](https://pypi.org/project/VolSplinesLib/) and on [GitHub](https://github.com/hedge0/VolSplinesLib)
+
 ## Installation
 
 You can install VolSplinesLib from PyPI:
@@ -56,9 +58,15 @@ plt.show()
 3. **SABR (Stochastic Alpha Beta Rho)**: A stochastic volatility model.
 4. **SVI (Stochastic Volatility Inspired)**: An inspired model for capturing the volatility smile.
 
-## How It Works
+## Contributing
 
-VolSplinesLib fits models to implied volatility data by minimizing the weighted sum of squared residuals between model predictions and observed market data.
+Contributions to **VolSplinesLib** are welcome! If you find a bug or have suggestions for improvements, please open an issue or submit a pull request. Make sure to follow these guidelines:
+
+1. Fork the repository and clone it locally.
+2. Create a new branch for your feature or fix.
+3. Add your changes and include tests for any new functionality.
+4. Run the test suite to ensure all tests pass.
+5. Submit a pull request describing your changes.
 
 ## License
 
