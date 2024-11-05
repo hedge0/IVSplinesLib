@@ -20,7 +20,7 @@ pip install git+https://github.com/hedge0/VolSplinesLib.git
 
 ## Usage
 
-After installation, you can perform interpolations using the library. Here’s a quick example:
+After installation, you can perform interpolations using the library. Here's a quick example:
 
 ```python
 import numpy as np
