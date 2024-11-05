@@ -28,8 +28,8 @@ import matplotlib.pyplot as plt
 from VolSplinesLib import perform_interpolation
 
 # Sample data
-x = np.array([100, 105, 110, 115, 120], dtype=np.float64)  # Strike prices
-y_mid = np.array([0.2, 0.18, 0.16, 0.15, 0.14], dtype=np.float64)  # Mid implied volatilities
+x = np.array([100, 105, 110, 115, 120], dtype=np.float64)           # Strike prices
+y_mid = np.array([0.2, 0.18, 0.16, 0.15, 0.14], dtype=np.float64)   # Mid implied volatilities
 y_bid = np.array([0.19, 0.17, 0.15, 0.14, 0.13], dtype=np.float64)  # Bid IVs
 y_ask = np.array([0.21, 0.19, 0.17, 0.16, 0.15], dtype=np.float64)  # Ask IVs
 
@@ -53,10 +53,10 @@ plt.show()
 
 ## Available Models
 
-1. **RFV (Rational Function Volatility)**: A rational function model for implied volatilities.
-2. **SLV (Spline Log Volatility)**: Uses a spline function for implied volatilities.
-3. **SABR (Stochastic Alpha Beta Rho)**: A stochastic volatility model.
-4. **SVI (Stochastic Volatility Inspired)**: An inspired model for capturing the volatility smile.
+1. **RFV (Rational Function Volatility)**
+2. **SLV (Spline Log Volatility)**
+3. **SABR (Stochastic Alpha Beta Rho)**
+4. **SVI (Stochastic Volatility Inspired)**
 
 ## Contributing
 
