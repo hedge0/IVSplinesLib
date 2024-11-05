@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from VolSplinesLib.interpolation_function import perform_interpolation  # Import the function
+from VolSplinesLib import perform_interpolation
 
-# Sample data (replace with your actual market data)
+# Sample data
 x = np.array([100, 105, 110, 115, 120], dtype=np.float64)  # Strikes
 y_mid = np.array([0.2, 0.18, 0.16, 0.15, 0.14], dtype=np.float64)  # Mid implied volatilities
 y_bid = np.array([0.19, 0.17, 0.15, 0.14, 0.13], dtype=np.float64)  # Bid IVs
