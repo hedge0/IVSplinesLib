@@ -14,10 +14,6 @@ class Interpolations:
         """
         Compute the weighted sum of squared residuals between the model predictions and market data.
 
-        This function serves as the objective function for the optimization process.
-        It calculates the weighted sum of squared differences between the model's predicted
-        implied volatilities and the observed market implied volatilities.
-
         Parameters:
         - params (np.ndarray): Array of parameters for the volatility model.
         - k (np.ndarray): Log-strike values, i.e., the natural logarithm of the strike prices.
@@ -43,8 +39,6 @@ class Interpolations:
         """
         Rational Function Volatility (RFV) model function.
 
-        The RFV model represents implied volatility as a rational function of the log-strike.
-
         Mathematical Form:
             IV(k) = [a + b * k + c * k^2] / [1 + d * k + e * k^2]
 
@@ -65,9 +59,6 @@ class Interpolations:
         """
         Spline Log Volatility (SLV) model function.
 
-        The SLV model uses a fourth-degree polynomial to model implied volatility as a function
-        of the log-strike.
-
         Mathematical Form:
             IV(k) = a + b * k + c * k^2 + d * k^3 + e * k^4
 
@@ -85,9 +76,6 @@ class Interpolations:
     def sabr_model(k, params):
         """
         SABR (Stochastic Alpha Beta Rho) model function.
-
-        The SABR model is widely used to describe the implied volatility smile in options markets.
-        This implementation uses a polynomial expansion for approximation.
 
         Mathematical Form (Approximation):
             IV(k) = α * [1 + β * k + ρ * k^2 + ν * k^3 + f₀ * k^4]
@@ -107,9 +95,6 @@ class Interpolations:
         """
         Stochastic Volatility Inspired (SVI) model function.
 
-        The SVI model is a parametric model capturing the implied volatility smile with a simple
-        functional form.
-
         Mathematical Form:
             IV(k) = a + b * [ρ * (k - m) + sqrt((k - m)^2 + σ^2)]
 
@@ -127,10 +112,6 @@ class Interpolations:
     def fit_model(x, y_mid, y_bid, y_ask, selectedModel):
         """
         Fit the selected volatility model to the market data.
-
-        This method fits the chosen volatility model to the observed market data by minimizing
-        the weighted sum of squared residuals between the model predictions and the observed
-        mid implied volatilities.
 
         Parameters:
         - x (np.ndarray): Strike prices of the options.
@@ -165,9 +146,6 @@ class Interpolations:
         def funcGrad(params):
             """
             Compute the objective function value and its gradient at the given parameters.
-
-            This function is used by the optimizer to find the parameters that minimize
-            the objective function.
 
             Parameters:
             - params (np.ndarray): Current estimate of the model parameters.
